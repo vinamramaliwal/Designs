@@ -9,7 +9,7 @@ public class Board {
     Cell[][] listOfCells;
     List<Snake> snakes= new ArrayList<>();
     List<Ladder> ladders= new ArrayList<>();
-    Board(int n, int snakes, int ladders){
+    Board(int n, int snakes, int ladders) {
         this.n=n;
         listOfCells = new Cell[n][n];
         for(int i=0;i<n;i++){
