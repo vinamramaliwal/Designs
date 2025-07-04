@@ -23,6 +23,8 @@ public class MainClass {
 
             queue.publish(topic2, new Message("m3"));
 
+            //topic1-> sub1,sub2--> m1,m2
+            //topic2-> sub3-> m3
             Thread.sleep(15000);
             queue.publish(topic2, new Message("m4"));
             queue.publish(topic1, new Message("m5"));
